@@ -11,3 +11,18 @@
 
 ![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-2.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-2.jpg)
 ######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Screenshot #2
+
+
+## Built with
+* [**_Java_**](https://www.java.com/)
+* [**_JADE (JAVA Agent DEvelopment Framework)_**](http://jade.tilab.com/)
+* [**_Rapid Miner Studio_**](https://rapidminer.com/products/studio/)
+* [**_Eclipse IDE 2018-12_**](https://www.eclipse.org/)
+* [**_IntelliJ IDEA_**](https://www.jetbrains.com/idea/)
+
+## Contributors
+> [Bernardo Leite](https://github.com/bernardoleite/)
+
+> [Bruno Miguel Pinto](https://github.com/bruno02960/)
+
+> [Rúben André Barreiro](https://github.com/rubenandrebarreiro/)
