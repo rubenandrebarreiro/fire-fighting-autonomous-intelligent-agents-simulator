@@ -30,9 +30,9 @@
 
 ## Classifications/Final Approval Grades
 
-### Approval Grade of Part 1
+### Approval Grade of Part 1 of Lab Work
 * 18 of 20
 
-### Approval Grade of Part 2
+### Approval Grade of Part 2 of Lab Work
 * 17 of 20
 
