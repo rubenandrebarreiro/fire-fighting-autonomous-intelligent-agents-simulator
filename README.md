@@ -18,7 +18,7 @@
 * [**_JADE (JAVA Agent DEvelopment Framework)_**](http://jade.tilab.com/)
 * [**_Rapid Miner Studio_**](https://rapidminer.com/products/studio/)
 * [**_Eclipse IDE 2018-12_**](https://www.eclipse.org/)
-* [**_IntelliJ IDEA_**](https://www.jetbrains.com/idea/)
+* [**_JetBrains IntelliJ IDEA_**](https://www.jetbrains.com/idea/)
 
 ## Contributors
 > [Bernardo Leite](https://github.com/bernardoleite/)
