@@ -30,9 +30,9 @@
 
 ## Classifications/Final Approval Grades
 
-### Part 1
+### Approval Grade of Part 1
 * 18 of 20
 
-### Part 2
+### Approval Grade of Part 2
 * 17 of 20
 
