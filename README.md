@@ -26,3 +26,13 @@
 > [Bruno Miguel Pinto](https://github.com/bruno02960/)
 
 > [Rúben André Barreiro](https://github.com/rubenandrebarreiro/)
+
+
+## Classifications/Final Approval Grades
+
+### Part 1
+* 18 of 20
+
+### Part 2
+* 17 of 20
+
