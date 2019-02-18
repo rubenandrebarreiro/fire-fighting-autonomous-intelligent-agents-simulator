@@ -6,7 +6,7 @@
 ***
 
 ## Current Status
-[![contributor for this repository](https://img.shields.io/badge/contributor-bernardoleite-blue.svg)](https://github.com/bernardoleite/) [![contributor for this repository](https://img.shields.io/badge/contributor-bruno02960-blue.svg)](https://github.com/bruno02960/) [![contributor for this repository](https://img.shields.io/badge/contributor-rubenandrebarreiro-blue.svg)](https://github.com/rubenandrebarreiro/) [![developed in](https://img.shields.io/badge/developed&nbsp;in-fct&nbsp;nova-blue.svg)](https://www.fct.unl.pt/)
+[![contributor for this repository](https://img.shields.io/badge/contributor-bernardoleite-blue.svg)](https://github.com/bernardoleite/) [![contributor for this repository](https://img.shields.io/badge/contributor-bruno02960-blue.svg)](https://github.com/bruno02960/) [![contributor for this repository](https://img.shields.io/badge/contributor-rubenandrebarreiro-blue.svg)](https://github.com/rubenandrebarreiro/) [![developed in](https://img.shields.io/badge/developed&nbsp;in-feup-blue.svg)](https://www.fe.up.pt/)
 [![current version](https://img.shields.io/badge/version-1.0-magenta.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
 
 [![status of this version no. 1](https://img.shields.io/badge/status-not&nbsp;completed-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
