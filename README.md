@@ -36,8 +36,8 @@
 
 ##### Final Approval Grade of the Project (Part 1 and Part 2)
 
-[![grade of this project](http://progressed.io/bar/18?scale=20&title=&nbsp;grade&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![grade of this project](http://progressed.io/bar/17?scale=20&title=&nbsp;grade&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![grade of this project](http://progressed.io/bar/18?scale=20&title=&nbsp;grade&nbsp;1&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![grade of this project](http://progressed.io/bar/17?scale=20&title=&nbsp;grade&nbsp;2&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
 
 
 ## Description
@@ -45,12 +45,12 @@
 
 ## Screenshots
 
-![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-1.jpg)
+![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-1.jpg)
 ######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Screenshot #1
 
 ***
 
-![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-2.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting/master/imgs/screenshot-2.jpg)
+![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-2.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-2.jpg)
 ######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Screenshot #2
 
 
