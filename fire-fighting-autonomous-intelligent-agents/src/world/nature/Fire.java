@@ -13,7 +13,7 @@
  *
  */
 
-package nature;
+package world.nature;
 
 import java.util.Random;
 
@@ -219,6 +219,8 @@ public class Fire {
 		
 		if(this.currentIntensity <= 0)
 			this.active = false;
+		
+		this.numIntensityDecreases++;
 	}
 	
 	/**

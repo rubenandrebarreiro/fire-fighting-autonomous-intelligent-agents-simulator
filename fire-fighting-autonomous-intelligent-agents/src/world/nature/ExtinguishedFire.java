@@ -13,7 +13,7 @@
  *
  */
 
-package nature;
+package world.nature;
 
 /**
  * Class responsible for an Extinguished Fire.
