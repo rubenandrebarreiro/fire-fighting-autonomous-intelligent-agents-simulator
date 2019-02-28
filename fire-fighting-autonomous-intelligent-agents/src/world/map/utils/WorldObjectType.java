@@ -16,7 +16,7 @@
 package world.map.utils;
 
 /**
- * Enumeration responsible for the type of a world object.
+ * Enumeration responsible for the type of a World's object.
  */
 public enum WorldObjectType {
 	
@@ -49,7 +49,7 @@ public enum WorldObjectType {
 	// Constructors:
     
     /**
-     * Constructor #1 of the world object type.
+     * Constructor #1 of the World's object type.
      * 
      * @param id the ID of the type of world object
      * @param name the name of the type of world object

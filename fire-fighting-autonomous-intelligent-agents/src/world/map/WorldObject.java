@@ -30,11 +30,14 @@ public class WorldObject {
 	
 	private Point worldObjectPosition;
 	
+	
+	// Constructors:
+	
 	/**
+	 * Constructor #1 of the World's object.
 	 * 
-	 * 
-	 * @param worldObjectType
-	 * @param worldObjectPosition
+	 * @param worldObjectType the type of the World's object
+	 * @param worldObjectPosition the position of the World's object
 	 */
 	public WorldObject(WorldObjectType worldObjectType, Point worldObjectPosition) {
 		this.worldObjectType = worldObjectType;
@@ -44,11 +47,20 @@ public class WorldObject {
 	// Methods/Functions:
 	
 	/**
+	 * Returns the type of the World's object.
+	 * 
+	 * @return the type of the World's object
+	 */
+	public WorldObjectType getWorldObjectType() {
+		return this.worldObjectType;
+	}
+	
+	/**
 	 * Returns the Position of the World's object.
 	 * 
 	 * @return the Position of the World's object
 	 */
-	private Point getPosition() {
+	public Point getPosition() {
 		return this.worldObjectPosition;
 	}
 
