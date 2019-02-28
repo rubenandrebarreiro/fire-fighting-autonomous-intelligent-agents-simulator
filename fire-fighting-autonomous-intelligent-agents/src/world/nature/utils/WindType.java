@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -16,14 +17,14 @@
 package world.nature.utils;
 
 /**
- * Enumeration responsible for the type of a Wind.
+ * The enumeration responsible for the type of a Wind.
  */
 public enum WindType {
 	
 	// Enumeration definitions:
 	
 	/**
-	 * Possible enumerations and their parameters.
+	 * The possible enumerations and their parameters.
 	 */
 	NO_WIND((byte) 0, "No Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_NO_WIND),
 	WEAK_WIND((byte) 1, "Weak Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_WEAK_WIND),
@@ -44,8 +45,8 @@ public enum WindType {
     private final String name;
     
     /**
-     * The penalty time that will affect the movement time of all the aircraft agents,
-     * accordingly with the current type of a Wind assigned to the world.
+     * The penalty time that will affect the movement time of all the Vehicle Agents,
+     * accordingly with the current type of a Wind assigned to the World.
 	 * 
 	 * The penalty times associated to each type of wind are the following:
 	 * - No Wind - 0ms / 0s
@@ -59,12 +60,12 @@ public enum WindType {
     // Constructors:
     
     /**
-     * Constructor #1 of the type of a Wind.
+     * The constructor #1 of the type of a Wind.
      * 
      * @param id the ID of the type of a Wind
      * @param name the name of the type of a Wind
-     * @param penaltyAircraftMovementTime the penalty time assiated to the type of a Wind
-     * 		  that will affect the movement time of all the vehicles' agents
+     * @param penaltyAircraftMovementTime the penalty time associated to the type of a Wind
+     * 		  that will affect the movement time of all the Vehicle Agents
      */
     private WindType(byte id, String name, long penaltyAircraftMovementTime) {
         this.id = id;
@@ -94,17 +95,17 @@ public enum WindType {
 	}
 	
 	/**
-	 * Returns the penalty time that will affect the movement time of all the aircraft agents,
-	 * accordingly with the current type of wind assigned to the world.
+	 * Returns the penalty time that will affect the movement time of all the Vehicle Agents,
+	 * accordingly with the current type of a Wind assigned to the World.
 	 * 
-	 * The penalty times associated to each type of wind are the following:
+	 * The penalty times associated to each type of a Wind are the following:
 	 * - No Wind - 0ms / 0s
 	 * - Weak Wind - 100ms / 0,1 s
 	 * - Normal Wind - 250ms / 0,25s
 	 * - Strong Wind - 600ms /0,6s
 	 * 
-	 * @return the penalty time that will affect the movement time of all the aircraft agents,
-	 * 		   accordingly with the current type of wind assigned to the world
+	 * @return the penalty time that will affect the movement time of all the Vehicle Agents,
+	 * 		   accordingly with the current type of a Wind assigned to the World
 	 */
 	public long getPenaltyAircraftMovementTime() {
 		return this.penaltyAircraftMovementTime;

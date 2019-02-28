@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -16,14 +17,14 @@
 package world.nature.utils;
 
 /**
- * Enumeration responsible for the type of a Weather Season.
+ * The enumeration responsible for the type of a Weather Season.
  */
 public enum WeatherSeasonType {
 	
 	// Enumeration definitions:
 	
 	/**
-	 * Possible enumerations and their parameters.
+	 * The possible enumerations and their parameters.
 	 */
 	SPRING((byte) 0, "Spring", Config.RAIN_FACTOR_SPRING, false),
 	SUMMER((byte) 1, "Summer", Config.RAIN_FACTOR_SUMMER, true),
@@ -58,7 +59,7 @@ public enum WeatherSeasonType {
     // Constructors:
 	    
     /**
-     * Constructor #1 of the type of the Weather Season.
+     * The constructor #1 of the type of the Weather Season.
      * 
      * @param id the ID of the type of the Weather Season
      * @param name the name of the type of the Weather Season
@@ -105,10 +106,12 @@ public enum WeatherSeasonType {
 
 	/**
 	 * Returns the boolean value that keeps the information about the possibility of 
-     * droughts (extreme dry situations) occurrence, associated to the type of the Weather Season.
+     * droughts (extreme dry situations) occurrence, associated to the type of the
+     * Weather Season.
 	 * 
 	 * @return the boolean value that keeps the information about the possibility of 
-     * 		   droughts (extreme dry situations) occurrence, associated to the type of the Weather Season
+     * 		   droughts (extreme dry situations) occurrence, associated to the type of the
+     * 		   Weather Season
 	 */
 	public boolean canOccurDroughts() {
 		return this.occurrenceOfDroughts;
