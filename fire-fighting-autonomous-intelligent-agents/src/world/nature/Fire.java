@@ -17,6 +17,7 @@ package world.nature;
 
 import java.util.Random;
 import world.map.WorldObject;
+import world.map.utils.WorldObjectType;
 
 /**
  * Class responsible for a Fire.
@@ -109,6 +110,7 @@ public class Fire {
 		this.attended = false;
 	}
 	
+	
 	// Methods/Functions:
 	
 	/**
@@ -121,12 +123,21 @@ public class Fire {
 	}
 	
 	/**
-	 * Returns the world's object of the Fire.
+	 * Returns the World's object of the Fire.
 	 * 
-	 * @return the world's object of the Fire
+	 * @return the World's object of the Fire
 	 */
-	public byte getWorldObject() {
+	public WorldObject getWorldObject() {
 		return this.worldObject;
+	}
+	
+	/**
+	 * Returns the type of the World's object of the Fire.
+	 * 
+	 * @return the type of the World's object of the Fire
+	 */
+	public WorldObjectType getWorldObjectType() {
+		return this.worldObject.getWorldObjectType();
 	}
 	
 	/**
