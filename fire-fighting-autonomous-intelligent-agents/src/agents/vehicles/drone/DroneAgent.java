@@ -1,5 +1,8 @@
 /**
- * Fire Fighting - Autonomous Intelligent Agents
+ * 
+ * Fire Fighting
+ * - Autonomous and Intelligent Agents
+ *   in the Fight against Forest Fires
  * 
  * Agents and Distributed Artificial Intelligence
  * 
@@ -18,7 +21,7 @@ package agents.vehicles.drone;
 import agents.vehicles.VehicleAgent;
 
 /**
- * Class responsible for a Drone Agent.
+ * The class responsible for a Drone Agent.
  */
 public class DroneAgent extends VehicleAgent {
 

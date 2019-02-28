@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -18,12 +19,12 @@ package agents.vehicles.firetruck;
 import agents.vehicles.VehicleAgent;
 
 /**
- * Class responsible for a Fire Truck.
+ * The class responsible for a Fire Truck Agent.
  */
 public class FireTruckAgent extends VehicleAgent {
 
 	/**
-	 * The default UID of the Truck Agent.
+	 * The default UID of the Fire Truck Agent.
 	 */
 	private static final long serialVersionUID = 1L;
 

@@ -1,5 +1,8 @@
 /**
- * Fire Fighting - Autonomous Intelligent Agents
+ * 
+ * Fire Fighting
+ * - Autonomous and Intelligent Agents
+ *   in the Fight against Forest Fires
  * 
  * Agents and Distributed Artificial Intelligence
  * 
@@ -18,7 +21,7 @@ package agents.vehicles;
 import jade.core.Agent;
 
 /**
- * Class responsible for a Vehicle Agent.
+ * The class responsible for a Vehicle Agent.
  */
 public abstract class VehicleAgent extends Agent {
 
