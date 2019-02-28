@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -20,21 +21,27 @@ import java.awt.Point;
 import world.map.utils.WorldObjectType;
 
 /**
- * Class responsible for a World's object.
+ * The class responsible for a World's object.
  */
 public class WorldObject {
 	
 	// Global Instance Variables:
 	
+	/**
+	 * The type of the World's object.
+	 */
 	private WorldObjectType worldObjectType;
 	
+	/**
+	 * The position/point of the World's object.
+	 */
 	private Point worldObjectPosition;
 	
 	
 	// Constructors:
 	
 	/**
-	 * Constructor #1 of the World's object.
+	 * The constructor #1 of the World's object.
 	 * 
 	 * @param worldObjectType the type of the World's object
 	 * @param worldObjectPosition the position of the World's object
@@ -56,37 +63,37 @@ public class WorldObject {
 	}
 	
 	/**
-	 * Returns the Position of the World's object.
+	 * Returns the position/point of the World's object.
 	 * 
-	 * @return the Position of the World's object
+	 * @return the position/point of the World's object
 	 */
 	public Point getPosition() {
 		return this.worldObjectPosition;
 	}
 
 	/**
-	 * Returns the coordinate X of the Position of the World's object.
+	 * Returns the coordinate X of the position/point of the World's object.
 	 * 
-	 * @return the coordinate X of the Position of the World's object
+	 * @return the coordinate X of the position/point of the World's object
 	 */
 	private int getPositionX() {
 		return this.worldObjectPosition.x;
 	}
 
 	/**
-	 * Returns the coordinate Y of the Position of the World's object.
+	 * Returns the coordinate Y of the position/point of the World's object.
 	 * 
-	 * @return the coordinate Y of the Position of the World's object
+	 * @return the coordinate Y of the position/point of the World's object
 	 */
 	private int getPositionY() {
 		return this.worldObjectPosition.y;
 	}
 
 	/**
-	 * Updates the both coordinates of the current Position of the World's object.
+	 * Updates the both coordinates of the current position/point of the World's object.
 	 * 
-	 * @param x the coordinate X of the Position of the World's object
-	 * @param y the coordinate Y of the Position of the World's object
+	 * @param x the coordinate X of the position/point of the World's object
+	 * @param y the coordinate Y of the position/point of the World's object
 	 */
 	public void updatePosition(int x, int y) {
 		this.worldObjectPosition.x = x;
