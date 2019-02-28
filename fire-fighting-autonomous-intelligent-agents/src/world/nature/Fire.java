@@ -7,15 +7,16 @@
  * Faculty of Engineering of University of Porto
  * 
  * Authors:
- * @author Bernardo Jose Leite - up
- * @author Bruno Miguel Pinto - up
- * @author Ruben Andre Barreiro - up201808917
+ * @author Bernardo Jose Leite - up201404464@fe.up.pt
+ * @author Bruno Miguel Pinto - up201502960@fe.up.pt
+ * @author Ruben Andre Barreiro - up201808917@fe.up.pt
  *
  */
 
 package world.nature;
 
 import java.util.Random;
+import world.map.WorldObject;
 
 /**
  * Class responsible for a Fire.
@@ -78,6 +79,9 @@ public class Fire {
 	 * Status to inform that the Fire is currently attended or not.
 	 */
 	public boolean attended;
+	
+	
+	// Constructors:
 	
 	/**
 	 * Constructor #1 of the Fire.

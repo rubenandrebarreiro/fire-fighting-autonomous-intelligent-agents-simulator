@@ -13,5 +13,18 @@
  *
  */
 
-// Package of Agents.FireStation.
-package agents.firestation;
+package agents.vehicles.firetruck;
+
+import agents.vehicles.VehicleAgent;
+
+/**
+ * Class responsible for a Fire Truck.
+ */
+public class FireTruckAgent extends VehicleAgent {
+
+	/**
+	 * The default UID of the Truck Agent.
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

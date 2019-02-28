@@ -13,5 +13,5 @@
  *
  */
 
-// Package of Agents.FireStation.
-package agents.firestation;
+// Package of Agents.Vehicles.FireTruck.
+package agents.vehicles.firetruck;
