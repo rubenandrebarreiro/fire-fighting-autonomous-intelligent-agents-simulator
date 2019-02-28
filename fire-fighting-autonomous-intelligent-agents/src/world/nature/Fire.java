@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -20,64 +21,64 @@ import world.map.WorldObject;
 import world.map.utils.WorldObjectType;
 
 /**
- * Class responsible for a Fire.
+ * The class responsible for a Fire.
  */
 public class Fire {
 	
 	// Global Instance Variables:
 	
 	/**
-	 * ID of the Fire.
+	 * The ID of the Fire.
 	 */
 	private byte id;
 	
 	/**
-	 * World's object of the Fire.
+	 * The World's object of the Fire.
 	 */
 	private WorldObject worldObject;
 	
 	/**
-	 * TimeStamp of the Fire's creation.
+	 * The timeStamp of the Fire's creation.
 	 */
 	private long creationTimeStamp;
 	
 	/**
-	 * Current intensity of the Fire.
+	 * The current intensity of the Fire.
 	 */
 	private int currentIntensity;
 	
 	/**
-	 * Original intensity of the Fire.
+	 * The original intensity of the Fire.
 	 */
 	private final int originalIntensity;
 	
 	/**
-	 * Probability of spreading of the Fire. 
+	 * The probability of spreading of the Fire. 
 	 */
 	private float spreadProbability;
 	
 	/**
-	 * Number of spreads of the Fire.
+	 * The number of spreads of the Fire.
 	 */
 	private int numSpreads;
 	
 	/**
-	 * Number of increases of the intensity of the Fire.
+	 * The number of increases of the intensity of the Fire.
 	 */
 	private int numIntensityIncreases;
 	
 	/**
-	 * Number of decreases of the intensity of the Fire.
+	 * The number of decreases of the intensity of the Fire.
 	 */
 	private int numIntensityDecreases;
 	
 	/**
-	 * Status to inform that the Fire is currently active or not.
+	 * The status to inform that the Fire is currently active or not.
 	 */
 	private boolean active;
 	
 	/**
-	 * Status to inform that the Fire is currently attended or not.
+	 * The status to inform that the Fire is currently attended or not.
 	 */
 	public boolean attended;
 	
@@ -85,7 +86,7 @@ public class Fire {
 	// Constructors:
 	
 	/**
-	 * Constructor #1 of the Fire.
+	 * The constructor #1 of the Fire.
 	 * 
 	 * @param id the ID of the Fire
 	 * @param worldObject the World's object associated to the Fire

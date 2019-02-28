@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -16,7 +17,7 @@
 package world.nature;
 
 /**
- * Class responsible for an Extinguished Fire.
+ * The class responsible for an Extinguished Fire.
  */
 public class ExtinguishedFire {
 	
@@ -41,10 +42,10 @@ public class ExtinguishedFire {
 	// Constructors:
 	
 	/**
-	 * Constructor #1 of the Extinguished Fire.
+	 * The constructor #1 of the Extinguished Fire.
 	 * 
-	 * @param fireExtinguished the 
-	 * @param idVehicleResponsibleForExtinguishFire
+	 * @param fireExtinguished the Fire that was extinguished
+	 * @param idVehicleResponsibleForExtinguishFire the ID of the vehicle responsible for the extinguish of the Fire
 	 */
 	public ExtinguishedFire(Fire extinguishedFire, byte idVehicleResponsibleForExtinguishFire) {
 		this.extinguishedFire = extinguishedFire;
