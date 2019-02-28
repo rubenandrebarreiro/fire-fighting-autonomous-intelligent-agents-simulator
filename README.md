@@ -95,11 +95,47 @@ git clone git@github.com:rubenandrebarreiro/fire-fighting-autonomous-intelligent
 * [**_JetBrains IntelliJ IDEA_**](https://www.jetbrains.com/idea/)
 
 ## Contributors
-> [Bernardo Leite](https://github.com/bernardoleite/)
+> [Bernardo José Leite](https://github.com/bernardoleite/)
 
 > [Bruno Miguel Pinto](https://github.com/bruno02960/)
 
 > [Rúben André Barreiro](https://github.com/rubenandrebarreiro/)
+
+
+## Contacts
+### Bernardo José Leite
+#### E-mails
+* [up201404464@fe.up.pt](mailto:up201404464@fe.up.pt)
+
+### Bruno Miguel Pinto
+#### E-mails
+* [up201502960@fe.up.pt](mailto:up201502960@fe.up.pt)
+
+### Rúben André Barreiro
+#### E-mails
+* [ruben.barreiro.92@gmail.com](mailto:ruben.barreiro.92@gmail.com)
+* [r.barreiro@campus.fct.unl.pt](mailto:r.barreiro@campus.fct.unl.pt)
+* [up201808917@fe.up.pt](mailto:up201808917@fe.up.pt)
+* [up201808917@g.uporto.pt](mailto:up201808917@g.uporto.pt)
+
+## Portfolios/Blogs and Git Hosting/Repository Services
+
+### Bernardo José Leite
+#### Hosting/Repository Services
+* [https://github.com/bernardoleite/](https://github.com/bernardoleite/)
+
+### Bruno Miguel Pinto
+#### Hosting/Repository Services
+* [https://github.com/bruno02960/](https://github.com/bruno02960/)
+
+### Rúben André Barreiro
+#### GitHub's Portfolio/Personal Blog
+* [https://rubenandrebarreiro.github.io/](https://rubenandrebarreiro.github.io/)
+
+#### Hosting/Repository Services
+* [https://github.com/rubenandrebarreiro/](https://github.com/rubenandrebarreiro/)
+* [https://gitlab.com/rubenandrebarreiro/](https://gitlab.com/rubenandrebarreiro/)
+* [https://bitbucket.org/rubenandrebarreiro/](https://bitbucket.org/rubenandrebarreiro/)
 
 
 ## Classifications/Final Approval Grades
