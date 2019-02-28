@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -20,24 +21,24 @@ import java.util.Random;
 import world.map.WorldObject;
 
 /**
- * Class responsible for a Water Resource.
+ * The class responsible for a Water Resource.
  */
 public class WaterResource {
 	
 	// Global Instance Variables:
 	
 	/**
-	 * ID of the Water Resource.
+	 * The ID of the Water Resource.
 	 */
 	private byte id;
 	
 	/**
-	 * World's object of the Water Resource.
+	 * The World's object of the Water Resource.
 	 */
 	private WorldObject worldObject;
 	
 	/**
-	 * Water Quantity currently contained in the Water Resource.
+	 * The Water Quantity currently contained in the Water Resource.
 	 */
 	private int waterQuantity;
 	
@@ -45,7 +46,7 @@ public class WaterResource {
 	// Constructors:
 	
 	/**
-	 * Constructor #1 of the Water Resource.
+	 * The constructor #1 of the Water Resource.
 	 * 
 	 * @param id the ID of the Water Resource
 	 * @param worldObject the World's object associated to the Water Resource
