@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -13,5 +14,5 @@
  *
  */
 
-// Package of Agents.World.
+// The package of Agents.World.
 package agents.world;

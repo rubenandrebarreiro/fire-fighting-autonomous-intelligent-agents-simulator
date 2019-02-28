@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -13,5 +14,5 @@
  *
  */
 
-// Package of World.Nature.Utils.
+// The package of World.Nature.Utils.
 package world.nature.utils;

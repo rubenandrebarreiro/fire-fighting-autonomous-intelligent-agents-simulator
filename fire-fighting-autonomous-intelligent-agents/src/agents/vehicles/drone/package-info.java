@@ -1,4 +1,5 @@
 /**
+ * 
  * Fire Fighting - Autonomous Intelligent Agents
  * 
  * Agents and Distributed Artificial Intelligence
@@ -13,5 +14,5 @@
  *
  */
 
-// Package of Agents.Vehicles.Drone.
+// The package of Agents.Vehicles.Drone.
 package agents.vehicles.drone;

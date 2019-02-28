@@ -1,5 +1,8 @@
 /**
- * Fire Fighting - Autonomous Intelligent Agents
+ * 
+ * Fire Fighting
+ * - Autonomous and Intelligent Agents
+ *   in the Fight against Forest Fires
  * 
  * Agents and Distributed Artificial Intelligence
  * 
@@ -13,5 +16,5 @@
  *
  */
 
-// Package of Agents.FireStation.
+// The package of Agents.FireStation.
 package agents.firestation;
