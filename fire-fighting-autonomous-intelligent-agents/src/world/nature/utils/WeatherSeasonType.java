@@ -16,6 +16,8 @@
 
 package world.nature.utils;
 
+import utils.configuration.Config;
+
 /**
  * The enumeration responsible for the type of a Weather Season.
  */
@@ -26,10 +28,10 @@ public enum WeatherSeasonType {
 	/**
 	 * The possible enumerations and their parameters.
 	 */
-	SPRING((byte) 0, "Spring", Config.RAIN_FACTOR_SPRING, false),
-	SUMMER((byte) 1, "Summer", Config.RAIN_FACTOR_SUMMER, true),
-	AUTUMN((byte) 2, "Autumn", Config.RAIN_FACTOR_AUTUMN, false),
-	WINTER((byte) 3, "Winter", Config.RAIN_FACTOR_WINTER, false);
+	SPRING((byte) 0, "Spring", Config.RAIN_FACTOR_SPRING_SEASON, false),
+	SUMMER((byte) 1, "Summer", Config.RAIN_FACTOR_SUMMER_SEASON, true),
+	AUTUMN((byte) 2, "Autumn", Config.RAIN_FACTOR_AUTUMN_SEASON, false),
+	WINTER((byte) 3, "Winter", Config.RAIN_FACTOR_WINTER_SEASON, false);
 
 	
 	// Global Instance Variables:

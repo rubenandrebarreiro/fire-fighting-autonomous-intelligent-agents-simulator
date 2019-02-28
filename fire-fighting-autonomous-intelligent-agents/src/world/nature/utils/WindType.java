@@ -16,6 +16,8 @@
 
 package world.nature.utils;
 
+import utils.configuration.Config;
+
 /**
  * The enumeration responsible for the type of a Wind.
  */
@@ -26,10 +28,10 @@ public enum WindType {
 	/**
 	 * The possible enumerations and their parameters.
 	 */
-	NO_WIND((byte) 0, "No Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_NO_WIND),
-	WEAK_WIND((byte) 1, "Weak Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_WEAK_WIND),
-	NORMAL_WIND((byte) 2, "Normal Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_NORMAL_WIND),
-	STRONG_WIND((byte) 3, "Strong Wind", Config.AIRCRAFT_MOVEMENT_PENALTY_TIME_STRONG_WIND);
+	NO_WIND((byte) 0, "No Wind", Config.AIRCRAFT_DRONE_MOVEMENT_PENALTY_TIME_NO_WIND),
+	WEAK_WIND((byte) 1, "Weak Wind", Config.AIRCRAFT_DRONE_MOVEMENT_PENALTY_TIME_WEAK_WIND),
+	NORMAL_WIND((byte) 2, "Normal Wind", Config.AIRCRAFT_DRONE_MOVEMENT_PENALTY_TIME_NORMAL_WIND),
+	STRONG_WIND((byte) 3, "Strong Wind", Config.AIRCRAFT_DRONE_MOVEMENT_PENALTY_TIME_STRONG_WIND);
 	
 	
 	// Global Instance Variables:

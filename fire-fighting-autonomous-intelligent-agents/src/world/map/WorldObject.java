@@ -76,7 +76,7 @@ public class WorldObject {
 	 * 
 	 * @return the coordinate X of the position/point of the World's object
 	 */
-	private int getPositionX() {
+	public int getPositionX() {
 		return this.worldObjectPosition.x;
 	}
 
@@ -85,7 +85,7 @@ public class WorldObject {
 	 * 
 	 * @return the coordinate Y of the position/point of the World's object
 	 */
-	private int getPositionY() {
+	public int getPositionY() {
 		return this.worldObjectPosition.y;
 	}
 

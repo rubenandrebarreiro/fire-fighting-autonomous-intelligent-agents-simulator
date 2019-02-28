@@ -18,6 +18,7 @@ package world.nature;
 
 import java.util.Random;
 
+import utils.configuration.Config;
 import world.map.WorldObject;
 
 /**
