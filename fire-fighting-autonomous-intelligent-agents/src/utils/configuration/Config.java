@@ -39,6 +39,24 @@ public abstract class Config {
 	public static int NUM_MAX_WATER_RESOURCES = 3;
 	
 	/**
+	 * The complete class name of the Aircraft Agent's instance.
+	 * e.g. some.package.object-class-name.
+	 */
+	public static final String INSTANCE_OF_AIRCRAFT_CLASS_NAME = "agents.vehicles.aircraft.AircraftAgent";
+	
+	/**
+	 * The complete class name of the Drone Agent's instance.
+	 * e.g. some.package.object-class-name.
+	 */
+	public static final String INSTANCE_OF_DRONE_CLASS_NAME = "agents.vehicles.drone.DroneAgent";
+	
+	/**
+	 * The complete class name of the Fire Truck Agent's instance.
+	 * e.g. some.package.object-class-name.
+	 */
+	public static final String INSTANCE_OF_FIRE_TRUCK_CLASS_NAME = "agents.vehicles.firetruck.FireTruckAgent";
+	
+	/**
 	 * Defines the maximum number of Aircrafts that can exist in the World.
 	 */
 	public static int NUM_MAX_AIRCRAFTS = 1;

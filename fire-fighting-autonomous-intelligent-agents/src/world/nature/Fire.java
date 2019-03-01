@@ -32,7 +32,7 @@ public class Fire {
 	/**
 	 * The ID of the Fire.
 	 */
-	private byte id;
+	private int id;
 	
 	/**
 	 * The World's object of the Fire.
@@ -93,7 +93,7 @@ public class Fire {
 	 * @param id the ID of the Fire
 	 * @param worldObject the World's object associated to the Fire
 	 */
-	public Fire(byte id, WorldObject worldObject) {
+	public Fire(int id, WorldObject worldObject) {
 		Random random = new Random();
 		
 		this.worldObject = worldObject;
@@ -121,7 +121,7 @@ public class Fire {
 	 * 
 	 * @return the ID of the Fire
 	 */
-	public byte getID() {
+	public int getID() {
 		return this.id;
 	}
 	
