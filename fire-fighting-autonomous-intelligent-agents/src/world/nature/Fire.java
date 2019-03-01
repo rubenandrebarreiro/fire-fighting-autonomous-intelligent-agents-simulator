@@ -82,7 +82,7 @@ public class Fire {
 	/**
 	 * The status to inform that the Fire is currently attended or not.
 	 */
-	public boolean attended;
+	private boolean attended;
 	
 	
 	// Constructors:

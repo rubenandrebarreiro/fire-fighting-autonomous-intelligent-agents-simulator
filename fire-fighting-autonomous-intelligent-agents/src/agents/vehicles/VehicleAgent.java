@@ -201,6 +201,15 @@ public abstract class VehicleAgent extends Agent {
 	}
 	
 	/**
+	 * Returns true if the Vehicle Agent is crashed and false, otherwise.
+	 * 
+	 * @return true if the Vehicle Agent is crashed and false, otherwise
+	 */
+	public boolean isCrashed() {
+		return this.crashed;
+	}
+	
+	/**
 	 * If the Vehicle Agent, at some moment, have its fuel tank empty,
 	 * it suffer an accident crash and become indefinitely inactive.
 	 */
@@ -209,7 +218,58 @@ public abstract class VehicleAgent extends Agent {
 		// The Vehicle Agent have its water tank empty
 		if(this.haveEmptyFuelTank()) {
 			this.crashed = true;
+			
+			// Take down this Vehicle Agent, after its crash
 			this.takeDown();
 		}
+	}
+	
+	/**
+	 * Returns true if the Vehicle Agent is currently attending a Fire and false, otherwise.
+	 * 
+	 * @return true if the Vehicle Agent is currently attending a Fire and false, otherwise
+	 */
+	public boolean isCurrentlyAttendingFire() {
+		return this.attendingFire;
+	}
+	
+	/**
+	 * Sets a "busy" state for this Vehicle Agent, because it will be attending a Fire.
+	 */
+	public void attendFire() {
+		
+		// This Vehicle Agent only attends a Fire, if isn't currently "busy"
+		if(!this.isBusy())
+			this.attendingFire = true;
+	}
+	
+	/**
+	 * Returns true if the Vehicle Agent is currently refuelling its Water or Fuel tank and false, otherwise.
+	 * 
+	 * @return true if the Vehicle Agent is currently refuelling its Water or Fuel tank and false, otherwise
+	 */
+	public boolean isCurrentlyRefuellingWaterOrFuel() {
+		return this.refuellingWaterOrFuel;
+	}
+	
+	/**
+	 * Sets a "busy" state for this Vehicle Agent, because it will be refuelling its Water or Fuel tank.
+	 */
+	public void refuelWaterOrFuelTank() {
+		
+		// This Vehicle Agent only attends a Fire, if isn't currently "busy"
+		if(!this.isBusy())
+			this.refuellingWaterOrFuel = true;
+	}
+	
+	/**
+	 * Returns true if the Vehicle Agent is currently attending a Fire or,
+	 * refuelling its Water or Fuel tank and false, otherwise.
+	 * 
+	 * @return true if the Vehicle Agent is currently attending a Fire or,
+	 * 		   refuelling its Water or Fuel tank and false, otherwise
+	 */
+	public boolean isBusy() {
+		return this.isCurrentlyAttendingFire() || this.isCurrentlyRefuellingWaterOrFuel();
 	}
 }

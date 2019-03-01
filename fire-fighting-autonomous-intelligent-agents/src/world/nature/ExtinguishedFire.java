@@ -36,7 +36,7 @@ public class ExtinguishedFire {
 	/**
 	 * The ID of the Vehicle responsible for the extinguish of the Fire.
 	 */
-	private byte idVehicleResponsibleForExtinguishFire;
+	private int idVehicleResponsibleForExtinguishFire;
 	
 	
 	// Constructors:
@@ -47,7 +47,7 @@ public class ExtinguishedFire {
 	 * @param fireExtinguished the Fire that was extinguished
 	 * @param idVehicleResponsibleForExtinguishFire the ID of the vehicle responsible for the extinguish of the Fire
 	 */
-	public ExtinguishedFire(Fire extinguishedFire, byte idVehicleResponsibleForExtinguishFire) {
+	public ExtinguishedFire(Fire extinguishedFire, int idVehicleResponsibleForExtinguishFire) {
 		this.extinguishedFire = extinguishedFire;
 		this.extinguishedFireTimeStamp = System.currentTimeMillis();
 		this.idVehicleResponsibleForExtinguishFire = idVehicleResponsibleForExtinguishFire;
@@ -78,7 +78,7 @@ public class ExtinguishedFire {
 	 * 
 	 * @return the ID of the Vehicle responsible for the extinguish of the Fire
 	 */
-	public byte getIdVehicleResponsibleForExtinguishFire() {
+	public int getIdVehicleResponsibleForExtinguishFire() {
 		return this.idVehicleResponsibleForExtinguishFire;
 	}
 }

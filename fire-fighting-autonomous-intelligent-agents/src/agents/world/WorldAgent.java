@@ -112,9 +112,9 @@ public class WorldAgent extends Agent {
 	// Mobile Agents (with movement)
 	
 	/**
-	 * The Aircraft Agents presented in the world.
+	 * The Vehicle Agents presented in the world.
 	 */
-	private ArrayList<VehicleAgent> vehicleAgents;
+	private Map<Integer, VehicleAgent> vehicleAgents;
 	
 	/**
 	 * The Aircraft Agents presented in the world.
@@ -311,7 +311,7 @@ public class WorldAgent extends Agent {
 	 * 
 	 * @return all the Vehicle Agents presented in the World
 	 */
-	public ArrayList<VehicleAgent> getVehicleAgents() {
+	public Map<Integer, VehicleAgent> getVehicleAgents() {
 		return this.vehicleAgents;
 	}
 	
@@ -399,7 +399,7 @@ public class WorldAgent extends Agent {
 		// currently active Fires presented in the World
 		// and also, about all the Vehicle Agents
 		this.activeFires = new ConcurrentHashMap<Integer, Fire>();
-		this.vehicleAgents = new ArrayList<VehicleAgent>();
+		this.vehicleAgents = new ConcurrentHashMap<Integer, VehicleAgent>();
 	}
 	
 	/**
@@ -458,7 +458,7 @@ public class WorldAgent extends Agent {
 			
 			WorldObject waterResourceWorldObject = new WorldObject(WorldObjectType.WATER_RESOURCE, new Point(waterResourcePosition[0], waterResourcePosition[1]));
 			
-			WaterResource waterResource = new WaterResource((byte) this.getNumWaterResources(), waterResourceWorldObject);
+			WaterResource waterResource = new WaterResource((byte) (this.getNumWaterResources() + 1), waterResourceWorldObject);
 		
 			this.worldMap[waterResourcePosition[0]][waterResourcePosition[1]] = waterResource;
 			this.waterResources.add(waterResource);
@@ -476,11 +476,11 @@ public class WorldAgent extends Agent {
 			
 			WorldObject aircraftWorldObject = new WorldObject(WorldObjectType.AIRCRAFT, new Point(aircraftPosition[0], aircraftPosition[1]));
 			
-			VehicleAgent aircraftAgent = new AircraftAgent((byte) this.getNumAircraftAgents(), aircraftWorldObject);
+			VehicleAgent aircraftAgent = new AircraftAgent((byte) (this.getNumTotalVehicleAgents() + 1), aircraftWorldObject);
 			
 			this.worldMap[aircraftPosition[0]][aircraftPosition[1]] = aircraftAgent;
 			this.aircraftAgents.add((AircraftAgent) aircraftAgent);
-			this.vehicleAgents.add(aircraftAgent);
+			this.vehicleAgents.put((this.getNumTotalVehicleAgents() + 1), aircraftAgent);
 		}
 	}
 	
@@ -495,11 +495,11 @@ public class WorldAgent extends Agent {
 			
 			WorldObject droneWorldObject = new WorldObject(WorldObjectType.DRONE, new Point(dronePosition[0], dronePosition[1]));
 			
-			VehicleAgent droneAgent = new DroneAgent((byte) this.getNumDroneAgents(), droneWorldObject);
+			VehicleAgent droneAgent = new DroneAgent((byte) (this.getNumTotalVehicleAgents() + 1), droneWorldObject);
 			
 			this.worldMap[dronePosition[0]][dronePosition[1]] = droneAgent;
 			this.droneAgents.add((DroneAgent) droneAgent);
-			this.vehicleAgents.add(droneAgent);
+			this.vehicleAgents.put((this.getNumTotalVehicleAgents() + 1), droneAgent);
 		}
 	}
 	
@@ -514,11 +514,11 @@ public class WorldAgent extends Agent {
 			
 			WorldObject fireTruckWorldObject = new WorldObject(WorldObjectType.FIRE_TRUCK, new Point(fireTruckPosition[0], fireTruckPosition[1]));
 			
-			VehicleAgent fireTruckAgent = new FireTruckAgent((byte) this.getNumFireTruckAgents(), fireTruckWorldObject);
+			VehicleAgent fireTruckAgent = new FireTruckAgent((byte) (this.getNumTotalVehicleAgents() + 1), fireTruckWorldObject);
 			
 			this.worldMap[fireTruckPosition[0]][fireTruckPosition[1]] = fireTruckAgent;
-			this.droneAgents.add((DroneAgent) fireTruckAgent);
-			this.vehicleAgents.add(fireTruckAgent);
+			this.fireTruckAgents.add((FireTruckAgent) fireTruckAgent);
+			this.vehicleAgents.put((this.getNumTotalVehicleAgents() + 1), fireTruckAgent);
 		}
 	}
 	
@@ -536,12 +536,12 @@ public class WorldAgent extends Agent {
 	/**
 	 * Removes a Fire from a given position/point in the World's map/grid.
 	 * 
-	 * @param idVehicleResponsibleForExtinguishFire the ID of the Vehicle Agent
-	 *        responsible for extinguish the Fire
 	 * @param firePositionX coordinate X of the position/point of the World's map/grid
 	 * @param firePositionY coordinate Y of the position/point of the World's map/grid
+	 * @param idVehicleResponsibleForExtinguishFire the ID of the Vehicle Agent
+	 *        responsible for extinguish the Fire
 	 */
-	public void removeFire(byte idVehicleResponsibleForExtinguishFire, int firePositionX, int firePositionY) {
+	public void removeFire(int firePositionX, int firePositionY, int idVehicleResponsibleForExtinguishFire) {
 		
 		// The position of the pretended Fire to be removed can't be null
 		if(this.worldMap[firePositionX][firePositionY] != null) {
