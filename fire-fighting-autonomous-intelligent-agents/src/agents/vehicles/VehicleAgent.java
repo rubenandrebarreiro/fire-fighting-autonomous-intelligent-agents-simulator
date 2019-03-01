@@ -18,6 +18,8 @@
 
 package agents.vehicles;
 
+import agents.vehicles.behaviours.DetectEnoughFuelQuantityBehaviour;
+import agents.vehicles.behaviours.DetectEnoughWaterQuantityBehaviour;
 import jade.core.Agent;
 import world.map.WorldObject;
 
@@ -271,5 +273,18 @@ public abstract class VehicleAgent extends Agent {
 	 */
 	public boolean isBusy() {
 		return this.isCurrentlyAttendingFire() || this.isCurrentlyRefuellingWaterOrFuel();
+	}
+	
+	/**
+	 * 
+	 */
+	protected void setup() {
+		
+		// Add the Vehicle Agent's Behaviours related to the detection of enough water and fuel
+		// in its respectively tanks and the necessary actions to perform in these situations
+		addBehaviour(new DetectEnoughWaterQuantityBehaviour(this, 1000));
+		addBehaviour(new DetectEnoughFuelQuantityBehaviour(this, 1000));
+		
+		
 	}
 }
