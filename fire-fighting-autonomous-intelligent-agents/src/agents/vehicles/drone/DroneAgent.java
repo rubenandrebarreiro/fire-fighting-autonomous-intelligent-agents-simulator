@@ -18,16 +18,102 @@
 
 package agents.vehicles.drone;
 
+import java.util.Random;
 import agents.vehicles.VehicleAgent;
+import utils.configuration.Config;
+import world.map.WorldObject;
 
 /**
  * The class responsible for a Drone Agent.
  */
 public class DroneAgent extends VehicleAgent {
 
+	// Constants/Invariants:
+	
 	/**
 	 * The default UID of the Drone Agent.
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	
+	// Constructors:
+	
+	/**
+	 * The constructor #1 of the Drone Agent.
+	 * 
+	 * @param id the ID of the Drone Agent
+	 * @param worldObject the World's object associated to the Drone Agent
+	 */
+	public DroneAgent(byte id, WorldObject worldObject) {
+		this.id = id;
+		this.worldObject = worldObject;
+	
+		Random randomObject = new Random();
+		
+		this.waterTankQuantity = 0;
+		DroneAgent.maxWaterTankCapacity = randomObject.nextInt(Config.DRONE_MAX_WATER_TANK_CAPACITY) + 1;
 
+		this.fuelTankQuantity = 0;
+		DroneAgent.maxFuelTankCapacity = randomObject.nextInt(Config.DRONE_MAX_INITIAL_FUEL_TANK_CAPACITY) + 1;
+
+		this.attendingFire = false;
+		this.refuellingWaterOrFuel = false;
+		
+		this.crashed = false;
+		
+		//this.vehicleMetricsStats = new VehicleMetricsStats();
+
+		//this.sleepingThreads = new ConcurrentHashMap<>();
+	}
+		
+	
+	// Methods/Functions:
+	
+	/**
+	 * Returns true if the Drone Agent have its water tank full and false, otherwise.
+	 * 
+	 * @return true if the Drone Agent have its water tank full and false, otherwise
+	 */
+	@Override
+	public boolean haveFullWaterTank() {
+		return this.getWaterTankQuantity() == Config.DRONE_MAX_WATER_TANK_CAPACITY;
+	}
+
+	/**
+	 * Returns the maximum water tank's capacity of the Drone Agent.
+	 * 
+	 * @return the maximum water tank's capacity of the Drone Agent
+	 */
+	@Override
+	public int getMaxWaterTankCapacity() {
+		return Config.DRONE_MAX_WATER_TANK_CAPACITY;
+	}
+	
+	/**
+	 * Returns true if the Drone Agent have its fuel tank full and false, otherwise.
+	 * 
+	 * @return true if the Drone Agent have its fuel tank full and false, otherwise
+	 */
+	@Override
+	public boolean haveFullFuelTank() {
+		return this.getWaterTankQuantity() == Config.DRONE_MAX_FINAL_FUEL_TANK_CAPACITY;
+	}
+
+	/**
+	 * Returns the maximum fuel tank's capacity of the Drone Agent.
+	 * 
+	 * @return the maximum fuel tank's capacity of the Drone Agent
+	 */
+	@Override
+	public int getMaxFuelTankCapacity() {
+		return Config.DRONE_MAX_FINAL_FUEL_TANK_CAPACITY;
+	}
+	
+	/**
+	 * Returns the basic information to be displayed in a graphic user interface about the Drone Agent.
+	 */
+	@Override
+	public String toString() {
+		return "D - fq: " + this.getFuelTankQuantity() + "; | wq: " + this.getWaterTankQuantity() + ";";
+	}
 }
