@@ -93,7 +93,7 @@ public class WorldAgent extends Agent {
 	/**
 	 * The currently active Fires in the World.
 	 */
-	private Map<Integer, Fire> activeFires;
+	private Map<Integer, Fire> currentlyActiveFires;
 	
 	/**
 	 * The Extinguished Fires by any Vehicle Agent, until the moment.
@@ -258,7 +258,7 @@ public class WorldAgent extends Agent {
 	 * @return all the currently active Fires presented in the World
 	 */
 	public Map<Integer, Fire> getCurrentlyActiveFires() {
-		return this.activeFires;
+		return this.currentlyActiveFires;
 	}
 	
 	/**
@@ -267,7 +267,7 @@ public class WorldAgent extends Agent {
 	 * @return the number of all the currently active Fires presented in the World
 	 */
 	public int getNumCurrentlyActiveFires() {
-		return this.activeFires.size();
+		return this.currentlyActiveFires.size();
 	}
 	
 	/**
@@ -398,7 +398,7 @@ public class WorldAgent extends Agent {
 		// Creation of the data structures too keep all the data about the
 		// currently active Fires presented in the World
 		// and also, about all the Vehicle Agents
-		this.activeFires = new ConcurrentHashMap<Integer, Fire>();
+		this.currentlyActiveFires = new ConcurrentHashMap<Integer, Fire>();
 		this.vehicleAgents = new ConcurrentHashMap<Integer, VehicleAgent>();
 	}
 	
@@ -530,7 +530,12 @@ public class WorldAgent extends Agent {
 	 * @param fire the Fire to be added to the World
 	 */
 	public void addFire(int firePositionX, int firePositionY, Fire fire) {
+		
+		// Add the Fire to the World's map/grid, putting it in its respectively position/point
 		this.worldMap[firePositionX][firePositionY] = fire;
+		
+		// Add the Fire to the currently active Fires
+		this.currentlyActiveFires.put(fire.getID(), fire);
 	}
 	
 	/**
@@ -551,12 +556,15 @@ public class WorldAgent extends Agent {
 				
 				Fire fireToBeExtinguished = (Fire) this.worldMap[firePositionX][firePositionY];
 				
+				// Remove the Fire to the World's map/grid, changing its position/point to null
 				this.worldMap[firePositionX][firePositionY] = null;
 				
-				this.activeFires.remove((int) fireToBeExtinguished.getID());
+				// Remove the Fire from the currently active Fires
+				this.currentlyActiveFires.remove(fireToBeExtinguished.getID());
 				
 				ExtinguishedFire extinguishedFire = new ExtinguishedFire(fireToBeExtinguished, idVehicleResponsibleForExtinguishFire);
 				
+				// Add the Fire to the Extinguished Fires
 				this.extinguishedFires.add(extinguishedFire);
 			}
 		}
