@@ -19,15 +19,58 @@
 package agents.firestation;
 
 import jade.core.Agent;
+import world.map.WorldObject;
 
 /**
  * The class responsible for the Fire Station Agent.
  */
 public class FireStationAgent extends Agent {
 
+	// Constants/Invariants:
+	
 	/**
 	 * The default UID of the Fire Station Agent.
 	 */
 	private static final long serialVersionUID = 1L;
-
+	
+	
+	// Global Instance Variables:
+	/**
+	 * The World's object of the Fire Station Agent.
+	 */
+	private WorldObject worldObject;
+	
+	
+	// Constructors:
+	
+	/**
+	 * Constructor #1 of the Fire Station Agent.
+	 * 
+	 * Creates a Fire Station Agent, initialising its world object.
+	 * 
+	 * @param worldObject the World's object of the Fire Station Agent
+	 */
+	public FireStationAgent(WorldObject worldObject) {	
+		this.worldObject = worldObject;
+	}
+	
+	
+	// Methods/Functions:
+	
+	/**
+	 * Returns the World's object of the Fire Station Agent.
+	 * 
+	 * @return the World's object of the Fire Station Agent
+	 */
+	public WorldObject getWorldObject() {
+		return this.worldObject;
+	}
+	
+	/**
+	 * Returns the basic information to be displayed in a graphic user interface about the Fire Station Agent.
+	 */
+	@Override
+	public String toString() {
+		return "FS | HQ";
+	}	
 }
