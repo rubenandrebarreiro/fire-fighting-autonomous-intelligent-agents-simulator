@@ -275,6 +275,6 @@ public class Fire {
 	 */
 	@Override
 	public String toString() {
-		return "F" + this.currentIntensity;
+		return "F - i: " + this.currentIntensity + ";";
 	}
 }

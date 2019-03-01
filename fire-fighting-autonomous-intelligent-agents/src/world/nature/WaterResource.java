@@ -118,6 +118,6 @@ public class WaterResource {
 	 */
 	@Override
 	public String toString() {
-		return "W" + this.waterQuantity;
+		return "WR - wq: " + this.waterQuantity + ";";
 	}
 }

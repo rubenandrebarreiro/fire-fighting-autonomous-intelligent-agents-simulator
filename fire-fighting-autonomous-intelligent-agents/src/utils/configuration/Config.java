@@ -64,19 +64,49 @@ public abstract class Config {
 	public static int NUM_MAX_FIRES = 8;
 	
 	/**
-	 * Defines the maximum water tank's capacity of a Vehicle Agent.
+	 * Defines the maximum water tank's capacity of an Aircraft Agent.
 	 */
-	public final static int VEHICLE_MAX_WATER_TANK_CAPACITY = 6;
+	public final static int AIRCRAFT_MAX_WATER_TANK_CAPACITY = 6;
 	
 	/**
-	 * Defines the initial maximum fuel tank's capacity of a Vehicle Agent.
+	 * Defines the maximum water tank's capacity of a Drone Agent.
 	 */
-	public final static int VEHICLE_MAX_INITIAL_FUEL_TANK_CAPACITY = (int) Math.round((2 * (Math.sqrt( (GRID_WIDTH ^ 2) + (GRID_HEIGHT ^ 2) ))));
+	public final static int DRONE_MAX_WATER_TANK_CAPACITY = 3;
 	
 	/**
-	 * Defines the final maximum fuel tank's capacity of a Vehicle Agent.
+	 * Defines the maximum water tank's capacity of a Fire Truck Agent.
 	 */
-	public final static int VEHICLE_MAX_FINAL_FUEL_TANK_CAPACITY = GRID_WIDTH * GRID_HEIGHT;
+	public final static int FIRE_TRUCK_MAX_WATER_TANK_CAPACITY = 9;
+	
+	/**
+	 * Defines the initial maximum fuel tank's capacity of an Aircraft Agent.
+	 */
+	public final static int AIRCRAFT_MAX_INITIAL_FUEL_TANK_CAPACITY = (int) (3 * Math.round((2 * (Math.sqrt( (GRID_WIDTH ^ 2) + (GRID_HEIGHT ^ 2) )))));
+	
+	/**
+	 * Defines the initial maximum fuel tank's capacity of a Drone Agent.
+	 */
+	public final static int DRONE_MAX_INITIAL_FUEL_TANK_CAPACITY = (int) Math.round((2 * (Math.sqrt( (GRID_WIDTH ^ 2) + (GRID_HEIGHT ^ 2) ))));
+	
+	/**
+	 * Defines the initial maximum fuel tank's capacity of a Fire Truck Agent.
+	 */
+	public final static int FIRE_TRUCK_MAX_INITIAL_FUEL_TANK_CAPACITY = (int) (2 * Math.round((2 * (Math.sqrt( (GRID_WIDTH ^ 2) + (GRID_HEIGHT ^ 2) )))));
+	
+	/**
+	 * Defines the final maximum fuel tank's capacity of an Aircraft Agent.
+	 */
+	public final static int AIRCRAFT_MAX_FINAL_FUEL_TANK_CAPACITY = GRID_WIDTH * GRID_HEIGHT;
+	
+	/**
+	 * Defines the final maximum fuel tank's capacity of a Drone Agent.
+	 */
+	public final static int DRONE_MAX_FINAL_FUEL_TANK_CAPACITY = (int) (2 * Math.round((2 * (Math.sqrt( (GRID_WIDTH ^ 2) + (GRID_HEIGHT ^ 2) )))));
+	
+	/**
+	 * Defines the final maximum fuel tank's capacity of a Fire Truck Agent.
+	 */
+	public final static int FIRE_TRUCK_MAX_FINAL_FUEL_TANK_CAPACITY = 2 * (GRID_WIDTH * GRID_HEIGHT);
 	
 	/**
 	 * Defines the maximum quantity of a Water Resource.
