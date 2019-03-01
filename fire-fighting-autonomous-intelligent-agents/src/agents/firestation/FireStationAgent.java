@@ -35,6 +35,7 @@ public class FireStationAgent extends Agent {
 	
 	
 	// Global Instance Variables:
+	
 	/**
 	 * The World's object of the Fire Station Agent.
 	 */
@@ -64,6 +65,78 @@ public class FireStationAgent extends Agent {
 	 */
 	public WorldObject getWorldObject() {
 		return this.worldObject;
+	}
+	
+	/**
+	 * Returns the names of the Vehicle Agents presented in the World.
+	 * 
+	 * @param numTotalVehicleAgents the total number of Vehicle Agents presented in the World
+	 * 
+	 * @return the names of the Vehicle Agents presented in the World
+	 */
+	public static Object[] getVehiclesAgentsNames(int numTotalVehicleAgents) {
+		
+		Object[] vehicleAgentsNames = new Object[numTotalVehicleAgents];
+		
+		// The Available Vehicle Agents
+		for(int i = 0; i < numTotalVehicleAgents; i++)
+			vehicleAgentsNames[i] = "Vehicle Agent " + i;
+		
+		return vehicleAgentsNames;
+	}
+	
+	/**
+	 * Returns the names of the Aircraft Agents presented in the World.
+	 * 
+	 * @param numAircraftAgents the number of Aircraft Agents presented in the World
+	 * 
+	 * @return the names of the Aircraft Agents presented in the World
+	 */
+	public static Object[] getAircraftAgentsNames(int numAircraftAgents) {
+		
+		Object[] aircraftAgentsNames = new Object[numAircraftAgents];
+		
+		// The Available Aircraft Agents
+		for(int i = 0; i < numAircraftAgents; i++)
+			aircraftAgentsNames[i] = "Aircraft Agent " + i;
+		
+		return aircraftAgentsNames;
+	}
+	
+	/**
+	 * Returns the names of the Drone Agents presented in the World.
+	 * 
+	 * @param numDroneAgents the number of Drone Agents presented in the World
+	 * 
+	 * @return the names of the Drone Agents presented in the World
+	 */
+	public static Object[] getDroneAgentsNames(int numDroneAgents) {
+		
+		Object[] droneAgentsNames = new Object[numDroneAgents];
+		
+		// The Available Drone Agents
+		for(int i = 0; i < numDroneAgents; i++)
+			droneAgentsNames[i] = "Drone Agent " + i;
+		
+		return droneAgentsNames;
+	}
+	
+	/**
+	 * Returns the names of the Fire Truck Agents presented in the World.
+	 * 
+	 * @param numFireTruckAgents the number of Drone Agents presented in the World
+	 * 
+	 * @return the names of the Fire Truck Agents presented in the World
+	 */
+	public static Object[] getFireTruckAgentsNames(int numFireTruckAgents) {
+		
+		Object[] fireTruckAgentsNames = new Object[numFireTruckAgents];
+		
+		// The Available Fire Truck Agents
+		for(int i = 0; i < numFireTruckAgents; i++)
+			fireTruckAgentsNames[i] = "Fire Truck Agent " + i;
+		
+		return fireTruckAgentsNames;
 	}
 	
 	/**
