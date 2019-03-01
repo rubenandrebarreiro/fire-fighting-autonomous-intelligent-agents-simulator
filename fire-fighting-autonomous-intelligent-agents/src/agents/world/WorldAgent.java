@@ -19,7 +19,6 @@
 package agents.world;
 
 import java.awt.Point;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
@@ -138,12 +137,12 @@ public class WorldAgent extends Agent {
 	/**
 	 * TODO
 	 */
-	private ActionListener actionListener;
+	//private ActionListener actionListener;
 	
 	/**
 	 * TODO
 	 */
-	private WorldMetricsStats worldMetricsStats;
+	//private WorldMetricsStats worldMetricsStats;
 	
 	
 	//Constructors:
@@ -164,7 +163,7 @@ public class WorldAgent extends Agent {
 		this.generateFireTruckAgents();
 				
 		// Creation of the World's Metrics and Stats
-		this.worldMetricsStats = new WorldMetricsStats();
+		//this.worldMetricsStats = new WorldMetricsStats();
 	}
 	
 	
@@ -384,9 +383,9 @@ public class WorldAgent extends Agent {
 	 * 
 	 * @return
 	 */
-	public WorldMetricsStats getWorldMetricsStats() {
-		return this.worldMetricsStats;	
-	}
+	//public WorldMetricsStats getWorldMetricsStats() {
+		//return this.worldMetricsStats;	
+	//}
 	
 	/**
 	 * Creates the matrix/grid that represents all the positions/points of the World.
@@ -444,7 +443,7 @@ public class WorldAgent extends Agent {
 		
 		WorldObject fireStationWorldObject = new WorldObject(WorldObjectType.FIRE_STATION, new Point(fireStationPosition[0], fireStationPosition[1]));
 		
-		this.fireStationAgent = new FireStationAgent(this, fireStationWorldObject);
+		this.fireStationAgent = new FireStationAgent(fireStationWorldObject);
 		this.worldMap[fireStationPosition[0]][fireStationPosition[1]] = this.fireStationAgent;
 	}
 	
@@ -477,7 +476,7 @@ public class WorldAgent extends Agent {
 			
 			WorldObject aircraftWorldObject = new WorldObject(WorldObjectType.AIRCRAFT, new Point(aircraftPosition[0], aircraftPosition[1]));
 			
-			VehicleAgent aircraftAgent = new AircraftAgent((byte) this.getNumAircraftAgents(), aircraftWorldObject, this);
+			VehicleAgent aircraftAgent = new AircraftAgent((byte) this.getNumAircraftAgents(), aircraftWorldObject);
 			
 			this.worldMap[aircraftPosition[0]][aircraftPosition[1]] = aircraftAgent;
 			this.aircraftAgents.add((AircraftAgent) aircraftAgent);
@@ -496,7 +495,7 @@ public class WorldAgent extends Agent {
 			
 			WorldObject droneWorldObject = new WorldObject(WorldObjectType.DRONE, new Point(dronePosition[0], dronePosition[1]));
 			
-			VehicleAgent droneAgent = new DroneAgent((byte) this.getNumDroneAgents(), droneWorldObject, this);
+			VehicleAgent droneAgent = new DroneAgent((byte) this.getNumDroneAgents(), droneWorldObject);
 			
 			this.worldMap[dronePosition[0]][dronePosition[1]] = droneAgent;
 			this.droneAgents.add((DroneAgent) droneAgent);
@@ -515,7 +514,7 @@ public class WorldAgent extends Agent {
 			
 			WorldObject fireTruckWorldObject = new WorldObject(WorldObjectType.FIRE_TRUCK, new Point(fireTruckPosition[0], fireTruckPosition[1]));
 			
-			VehicleAgent fireTruckAgent = new FireTruckAgent((byte) this.getNumFireTruckAgents(), fireTruckWorldObject, this);
+			VehicleAgent fireTruckAgent = new FireTruckAgent((byte) this.getNumFireTruckAgents(), fireTruckWorldObject);
 			
 			this.worldMap[fireTruckPosition[0]][fireTruckPosition[1]] = fireTruckAgent;
 			this.droneAgents.add((DroneAgent) fireTruckAgent);
@@ -562,6 +561,4 @@ public class WorldAgent extends Agent {
 			}
 		}
 	}
-	
-	
 }
