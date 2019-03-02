@@ -20,6 +20,8 @@ package agents.vehicles;
 
 import agents.vehicles.behaviours.DetectEnoughFuelQuantityBehaviour;
 import agents.vehicles.behaviours.DetectEnoughWaterQuantityBehaviour;
+import agents.vehicles.behaviours.DetectedFireAlarmListenerBehaviour;
+import agents.vehicles.messages.templates.AlarmDetectedFireACLMessageTemplate;
 import jade.core.Agent;
 import world.map.WorldObject;
 
@@ -285,6 +287,7 @@ public abstract class VehicleAgent extends Agent {
 		addBehaviour(new DetectEnoughWaterQuantityBehaviour(this, 1000));
 		addBehaviour(new DetectEnoughFuelQuantityBehaviour(this, 1000));
 		
-		
+		// TODO
+		addBehaviour(new DetectedFireAlarmListenerBehaviour(this, new AlarmDetectedFireACLMessageTemplate(), null));
 	}
 }
