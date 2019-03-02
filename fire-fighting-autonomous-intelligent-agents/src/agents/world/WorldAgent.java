@@ -81,7 +81,7 @@ public class WorldAgent extends Agent {
 	// Global Instance Variables:
 	
 	/**
-	 * The matrix of grid/map that represents all the positions/points of the World.
+	 * The matrix that represents all the positions/points of the World's map/grid.
 	 */
 	private Object[][] worldMap;
 	
@@ -91,7 +91,7 @@ public class WorldAgent extends Agent {
 	private ArrayList<WaterResource> waterResources;
 	
 	/**
-	 * The currently active Fires in the World.
+	 * The Currently Active Fires in the World.
 	 */
 	private Map<Integer, Fire> currentlyActiveFires;
 	
@@ -210,18 +210,18 @@ public class WorldAgent extends Agent {
 	}
 	
 	/**
-	 * Returns the number of all the positions/points presented in the World's map.
+	 * Returns the number of all the positions/points presented in the World's map/grid.
 	 * 
-	 * @return the number of all the positions/points presented in the World's map
+	 * @return the number of all the positions/points presented in the World's map/grid
 	 */
 	public int getSizeWorldMap() {
 		return this.worldMap.length * this.worldMap[0].length;
 	}
 	
 	/**
-	 * Returns the number of all the positions/points presented and currently available in the World's map.
+	 * Returns the number of all the positions/points presented and currently available in the World's map/grid.
 	 * 
-	 * @return the number of all the positions/points presented and currently available in the World's map
+	 * @return the number of all the positions/points presented and currently available in the World's map/grid
 	 */
 	public int getAvailablePositionsInWorldMap() {
 		int numAvailablePositions = 0;
@@ -253,18 +253,18 @@ public class WorldAgent extends Agent {
 	}
 	
 	/**
-	 * Returns all the currently active Fires presented in the World.
+	 * Returns all the Currently Active Fires presented in the World.
 	 * 
-	 * @return all the currently active Fires presented in the World
+	 * @return all the Currently Active Fires presented in the World
 	 */
 	public Map<Integer, Fire> getCurrentlyActiveFires() {
 		return this.currentlyActiveFires;
 	}
 	
 	/**
-	 * Returns the number of all the currently active Fires presented in the World.
+	 * Returns the number of all the Currently Active Fires presented in the World.
 	 * 
-	 * @return the number of all the currently active Fires presented in the World
+	 * @return the number of all the Currently Active Fires presented in the World
 	 */
 	public int getNumCurrentlyActiveFires() {
 		return this.currentlyActiveFires.size();
@@ -396,7 +396,7 @@ public class WorldAgent extends Agent {
 		worldMap = new Object[Config.GRID_WIDTH][Config.GRID_HEIGHT];
 
 		// Creation of the data structures too keep all the data about the
-		// currently active Fires presented in the World
+		// Currently Active Fires presented in the World
 		// and also, about all the Vehicle Agents
 		this.currentlyActiveFires = new ConcurrentHashMap<Integer, Fire>();
 		this.vehicleAgents = new ConcurrentHashMap<Integer, VehicleAgent>();
@@ -416,9 +416,9 @@ public class WorldAgent extends Agent {
 	}
 	
 	/**
-	 * Returns a random position/point in the matrix/grid that represents all the positions/points of the World.
+	 * Returns a random position/point in the map/grid that represents all the positions/points of the World.
 	 * 
-	 * @return a random position/point in the matrix/grid that represents all the positions/points of the World
+	 * @return a random position/point in the map/grid that represents all the positions/points of the World
 	 */
 	public int[] generateRandomPosition() {
 				
@@ -534,7 +534,7 @@ public class WorldAgent extends Agent {
 		// Add the Fire to the World's map/grid, putting it in its respectively position/point
 		this.worldMap[firePositionX][firePositionY] = fire;
 		
-		// Add the Fire to the currently active Fires
+		// Add the Fire to the Currently Active Fires
 		this.currentlyActiveFires.put(fire.getID(), fire);
 	}
 	
@@ -551,7 +551,7 @@ public class WorldAgent extends Agent {
 		// The position of the pretended Fire to be removed can't be null
 		if(this.worldMap[firePositionX][firePositionY] != null) {
 			
-			// The position of the pretended FIre to be removed must be, as obvious, an instance of a Fire
+			// The position of the pretended Fire to be removed must be, as obvious, an instance of a Fire
 			if(this.worldMap[firePositionX][firePositionY] instanceof Fire) {
 				
 				Fire fireToBeExtinguished = (Fire) this.worldMap[firePositionX][firePositionY];
@@ -559,7 +559,7 @@ public class WorldAgent extends Agent {
 				// Remove the Fire to the World's map/grid, changing its position/point to null
 				this.worldMap[firePositionX][firePositionY] = null;
 				
-				// Remove the Fire from the currently active Fires
+				// Remove the Fire from the Currently Active Fires
 				this.currentlyActiveFires.remove(fireToBeExtinguished.getID());
 				
 				ExtinguishedFire extinguishedFire = new ExtinguishedFire(fireToBeExtinguished, idVehicleResponsibleForExtinguishFire);

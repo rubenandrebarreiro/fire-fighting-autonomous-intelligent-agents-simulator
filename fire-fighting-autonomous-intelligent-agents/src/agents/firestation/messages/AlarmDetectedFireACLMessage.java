@@ -26,6 +26,7 @@ import agents.vehicles.VehicleAgent;
 import jade.core.AID;
 import jade.domain.FIPANames;
 import jade.lang.acl.ACLMessage;
+import utils.configuration.Config;
 import world.nature.Fire;
 
 /**
@@ -36,7 +37,7 @@ public class AlarmDetectedFireACLMessage extends ACLMessage {
 	// Constants/Invariants:
 
 	/**
-	 * The default UID of the Alarm Vehicles About Fires Behaviour.
+	 * The default UID of the CFP/Alarm Detected Fire ACL Message.
 	 */
 	private static final long serialVersionUID = 1L;
 	
@@ -125,9 +126,11 @@ public class AlarmDetectedFireACLMessage extends ACLMessage {
 				if(!this.vehicleAgents.get(i).isBusy())
 					this.detectedFireACLMessage.addReceiver(new AID((String) args[i], AID.ISLOCALNAME));
 			}
-					      
+			
+			// Set the parameters/template of this CFP/Alarm Detected Fire ACL Message
 			this.detectedFireACLMessage.setProtocol(FIPANames.InteractionProtocol.FIPA_CONTRACT_NET);
-					 
+			this.detectedFireACLMessage.setOntology(Config.DETECTED_FIRE_ALARM_ONTOLOGY);
+			
 			// Wait only 20 seconds to receive a reply to this CFP/Detected Fire ACL Message
 			this.detectedFireACLMessage.setReplyByDate(new Date(System.currentTimeMillis() + TIME_TO_WAIT_FOR_RESPONSE));
 			
@@ -135,9 +138,9 @@ public class AlarmDetectedFireACLMessage extends ACLMessage {
 			
 			// Set the content of this CFP/Alarm Detected Fire ACL Message
 			this.detectedFireACLMessage
-					.setContent("Fire detected!!! A Fire of Intensity of " + 
+					.setContent("Fire detected!!! A Fire of intensity of " + 
 							this.detectedFire.getCurrentIntensity() + 
-									" in Position/Point (" 
+									" in position/point (" 
 											+ (int) (firePosition.getX()) + "," 
 													+ (int) (firePosition.getY()) + ") of the World's map/grid...");
 		}

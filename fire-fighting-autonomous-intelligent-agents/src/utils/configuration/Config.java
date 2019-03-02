@@ -219,4 +219,9 @@ public abstract class Config {
 	 * (30 seconds of timeout for each number of intensity increases)
 	 */
 	public final static int FIRE_ACTIVE_INTENSITY_MAX_PENALTY = 4;
+	
+	/**
+	 * Defines a detected Fire alarm's ontology to be used in Alarm Detected Fire ACL Messages.
+	 */
+	public final static String DETECTED_FIRE_ALARM_ONTOLOGY = "Detected Fire Alarm";
 }
