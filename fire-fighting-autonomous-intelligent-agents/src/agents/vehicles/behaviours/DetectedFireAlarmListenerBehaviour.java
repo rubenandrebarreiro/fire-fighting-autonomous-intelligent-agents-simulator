@@ -20,6 +20,7 @@ package agents.vehicles.behaviours;
 
 import agents.vehicles.VehicleAgent;
 import agents.vehicles.messages.AlarmDetectedFireACLProposalResponseMessage;
+import agents.vehicles.messages.InformAttendingFireACLMessage;
 import agents.vehicles.messages.templates.AlarmDetectedFireACLMessageTemplate;
 import jade.core.behaviours.DataStore;
 import jade.domain.FIPAAgentManagement.FailureException;
@@ -168,10 +169,9 @@ public class DetectedFireAlarmListenerBehaviour extends ContractNetResponder {
 			//}
 			
 			// TODO
-			ACLMessage inform = accept.createReply();
-			inform.setPerformative(ACLMessage.INFORM);
-		
-			return inform;
+			InformAttendingFireACLMessage informAttendingFireACLMessage = new InformAttendingFireACLMessage(accept.createReply());
+			
+			return informAttendingFireACLMessage.getInformAttendingFireACLMessage();
 		}
 		// The Vehicle Agent couldn't go attend the Fire, as unexpected
 		else {
