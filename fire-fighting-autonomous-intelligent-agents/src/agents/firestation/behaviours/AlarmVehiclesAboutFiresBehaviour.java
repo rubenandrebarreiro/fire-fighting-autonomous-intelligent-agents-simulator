@@ -65,10 +65,21 @@ public class AlarmVehiclesAboutFiresBehaviour extends ContractNetInitiator {
 													DataStore detectedFireMessagesDataStore) {
 		
 		super(fireStationAgent, detectedFireACLMessage, detectedFireMessagesDataStore);
+		
+		this.detectedFireACLMessage = detectedFireACLMessage;
 	}
 	
 	
 	// Methods/Functions:
+	
+	/**
+	 * Returns the CFP/Alarm Detected Fire ACL Message associated to this behaviour.
+	 * 
+	 * @return the CFP/Alarm Detected Fire ACL Message associated to this behaviour
+	 */
+	public ACLMessage getDetectedFireACLMessage() {
+		return this.detectedFireACLMessage;
+	}
 	
 	/**
 	 * Returns a vector of CFP/Alarm Detected Fire ACL Messages.
@@ -81,9 +92,9 @@ public class AlarmVehiclesAboutFiresBehaviour extends ContractNetInitiator {
 	protected Vector prepareDetectedFireACLMessages(ACLMessage detectedFireACLMessage) {
 		
 		//if(GraphicUserInterface.isActive())
-			//GraphicUserInterface.log("Preparing ACL Messages related to the detected Fire...\n");
+			//GraphicUserInterface.log("Preparing CFP/Alarm Detected Fire ACL Messages...\n");
 		//else
-			System.out.print("Preparing ACL Messages related to the detected Fire...\n");
+			System.out.print("Preparing CFP/Alarm Detected Fire ACL Messages...\n");
 		
 		Vector messagesVector = new Vector();		
 
