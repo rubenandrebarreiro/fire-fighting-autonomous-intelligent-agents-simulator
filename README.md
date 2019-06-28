@@ -1,5 +1,7 @@
 # Fire Fighting - Autonomous and Intelligent Agents in the Fight against Forest Fires
 
+### (JADE Agents - Simulator)
+
 ![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/JPGs/banner-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/JPGs/banner-1.jpg)
 ######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Banner #1
 
