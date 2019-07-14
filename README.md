@@ -1,25 +1,25 @@
-# Fire Fighting - Autonomous and Intelligent Agents in the Fight against Forest Fires
+# Fire Fighting - Autonomous and Intelligent Agents' Simulator in the Fight against Forest Fires
 
 ### (JADE Agents - Grid Simulator)
 
-![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/JPGs/banner-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/JPGs/banner-1.jpg)
-######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Banner #1
+![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/JPGs/banner-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/JPGs/banner-1.jpg)
+######  Fire Fighting (Autonomous and Intelligent Agents' Simulator in the Fight against Forest Fires) - Banner #1
 
 ***
 
 ## Current Status
 [![contributor for this repository](https://img.shields.io/badge/contributor-bernardoleite-blue.svg)](https://github.com/bernardoleite/) [![contributor for this repository](https://img.shields.io/badge/contributor-bruno02960-blue.svg)](https://github.com/bruno02960/) [![contributor for this repository](https://img.shields.io/badge/contributor-rubenandrebarreiro-blue.svg)](https://github.com/rubenandrebarreiro/) [![developed in](https://img.shields.io/badge/developed&nbsp;in-feup-blue.svg)](https://www.fe.up.pt/)
-[![current version](https://img.shields.io/badge/version-1.0-magenta.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![current version](https://img.shields.io/badge/version-1.0-magenta.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 
-[![status of this version no. 1](https://img.shields.io/badge/status-not&nbsp;completed-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![status of this version no. 2](https://img.shields.io/badge/status-not&nbsp;final-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![status of this version no. 3](https://img.shields.io/badge/status-not&nbsp;stable-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![status of this version no. 4](https://img.shields.io/badge/status-documented-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![status of this version no. 1](https://img.shields.io/badge/status-not&nbsp;completed-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![status of this version no. 2](https://img.shields.io/badge/status-not&nbsp;final-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![status of this version no. 3](https://img.shields.io/badge/status-not&nbsp;stable-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![status of this version no. 4](https://img.shields.io/badge/status-documented-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 
-[![keyword of this version no. 1](https://img.shields.io/badge/keyword-ai-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![keyword of this version no. 2](https://img.shields.io/badge/keyword-agents-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![keyword of this version no. 3](https://img.shields.io/badge/keyword-data-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![keyword of this version no. 4](https://img.shields.io/badge/keyword-nature-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![keyword of this version no. 1](https://img.shields.io/badge/keyword-ai-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![keyword of this version no. 2](https://img.shields.io/badge/keyword-agents-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![keyword of this version no. 3](https://img.shields.io/badge/keyword-data-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![keyword of this version no. 4](https://img.shields.io/badge/keyword-nature-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 
 
 [![technology used no. 1](https://img.shields.io/badge/built&nbsp;with-java-red.svg)](https://www.java.com/) [![technology used no. 2](https://img.shields.io/badge/built&nbsp;with-jade-red.svg)](http://jade.tilab.com/)
@@ -27,19 +27,19 @@
 [![software used no. 2](https://img.shields.io/badge/software-eclipse&nbsp;ide-gold.svg)](https://www.eclipse.org/)
 [![software used no. 3](https://img.shields.io/badge/software-jetbrains&nbsp;intellij&nbsp;idea-gold.svg)](https://www.jetbrains.com/idea/)
 
-[![star this repository](http://githubbadges.com/star.svg?user=rubenandrebarreiro&repo=fire-fighting-autonomous-intelligent-agents&style=flat)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/stargazers)
-[![fork this repository](http://githubbadges.com/fork.svg?user=rubenandrebarreiro&repo=fire-fighting-autonomous-intelligent-agents&style=flat)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/fork)
-[![downloads of this repository](https://img.shields.io/github/downloads/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/total.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/archive/master.zip)
-[![price of this project](https://img.shields.io/badge/price-free-success.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/archive/master.zip)
+[![star this repository](http://githubbadges.com/star.svg?user=rubenandrebarreiro&repo=fire-fighting-autonomous-intelligent-agents-simulator&style=flat)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/stargazers)
+[![fork this repository](http://githubbadges.com/fork.svg?user=rubenandrebarreiro&repo=fire-fighting-autonomous-intelligent-agents-simulator&style=flat)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/fork)
+[![downloads of this repository](https://img.shields.io/github/downloads/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/total.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/archive/master.zip)
+[![price of this project](https://img.shields.io/badge/price-free-success.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/archive/master.zip)
 
 ##### Current Progress of the Project
 
-[![current progress of this project](http://progressed.io/bar/70?title=&nbsp;completed&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/) 
+[![current progress of this project](http://progressed.io/bar/70?title=&nbsp;completed&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/) 
 
 ##### Final Approval Grade of the Project (Part 1 and Part 2)
 
-[![grade of this project](http://progressed.io/bar/18?scale=20&title=&nbsp;grade&nbsp;1&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
-[![grade of this project](http://progressed.io/bar/17?scale=20&title=&nbsp;grade&nbsp;2&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/)
+[![grade of this project](http://progressed.io/bar/18?scale=20&title=&nbsp;grade&nbsp;1&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![grade of this project](http://progressed.io/bar/17?scale=20&title=&nbsp;grade&nbsp;2&nbsp;&suffix=&nbsp;)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 
 
 ## Description
@@ -47,13 +47,13 @@
 
 ## Screenshots
 
-![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-1.jpg)
-######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Screenshot #1
+![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/screenshot-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/screenshot-1.jpg)
+######  Fire Fighting (Autonomous and Intelligent Agents' Simulator in the Fight against Forest Fires) - Screenshot #1
 
 ***
 
-![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-2.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/master/imgs/screenshot-2.jpg)
-######  Fire Fighting (Autonomous and Intelligent Agents in the Fight against Forest Fires) - Screenshot #2
+![https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/screenshot-2.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/master/imgs/screenshot-2.jpg)
+######  Fire Fighting (Autonomous and Intelligent Agents' Simulator in the Fight against Forest Fires) - Screenshot #2
 
 ***
 
@@ -67,26 +67,26 @@ To install and run this application, you will need:
 ### Installation
 To install this application, you will need to _download_ or _clone_ this repository and run the application locally:
 
-> You can do it downloading the [**_.zip file_**](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents/archive/master.zip) in download section of this repository.
+> You can do it downloading the [**_.zip file_**](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/archive/master.zip) in download section of this repository.
 
 > Or instead, by cloning this repository by a [**_Git Client based GUI_**](https://git-scm.com/downloads/guis), using [**_HTTPS_**](https://en.wikipedia.org/wiki/HTTPS) or [**_SSH_**](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol), by one of the following link:
 * [**_HTTPS_**](https://en.wikipedia.org/wiki/HTTPS):
 ```
-https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents.git
+https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator.git
 ```
 * [**_SSH_**](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol):
 ```
-git@github.com:rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents.git
+git@github.com:rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator.git
 ```
 
 > Or even, by running one of the following commands in a **_Git Bash Console_**:
 * [**_HTTPS_**](https://en.wikipedia.org/wiki/HTTPS):
 ```
-git clone https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents.git
+git clone https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator.git
 ```
 * [**_SSH_**](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol):
 ```
-git clone git@github.com:rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents.git
+git clone git@github.com:rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator.git
 ```
 
 ## Built with
