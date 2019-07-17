@@ -16,7 +16,7 @@
 [![status of this version no. 3](https://img.shields.io/badge/status-not&nbsp;stable-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 [![status of this version no. 4](https://img.shields.io/badge/status-documented-orange.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 
-[![keyword of this version no. 1](https://img.shields.io/badge/keyword-ai-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
+[![keyword of this version no. 1](https://img.shields.io/badge/keyword-artificial&nbsp;intelligence-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 [![keyword of this version no. 2](https://img.shields.io/badge/keyword-agents-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 [![keyword of this version no. 3](https://img.shields.io/badge/keyword-data-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
 [![keyword of this version no. 4](https://img.shields.io/badge/keyword-nature-brown.svg)](https://github.com/rubenandrebarreiro/fire-fighting-autonomous-intelligent-agents-simulator/)
